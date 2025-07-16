@@ -1,71 +1,89 @@
+<div align="center">
+
+<img src="assets/logo.png" alt="Digital Twin Logo" width="200"/>
+
 # 🧠 Digital Twin ML Platform
 
-A modular machine learning-based Digital Twin dashboard built with **Streamlit**, designed to support multiple domain teams such as Finance, Health, Energy, and Urban Planning.
+A modular **Machine Learning-based Digital Twin** dashboard built with [**Streamlit**](https://streamlit.io), designed to empower cross-domain teams such as **Finance**, **Health**, **Energy**, and **Urban Planning** through scientific visualization and interactivity.
+
+</div>
 
 ---
 
-## 📌 Features
+## 🚀 Features
 
-- Modular design for team collaboration
-- PCA-based scientific visualizations
-- Interactive dashboards using Streamlit + Plotly
-- Supports multiple verticals:
-  - 💵 Finance (KPI + PCA)
-  - 🩺 Health (Vital signs simulation)
-  - ⚡ Energy (Smart grid load)
-  - 🏙️ Urban Planning (Traffic/Pollution simulation)
+- ✅ **Modular architecture** for seamless collaboration between teams  
+- 📊 **PCA-based** dimensionality reduction and visual analytics  
+- 🧩 **Interactive dashboards** using **Streamlit** and **Plotly**  
+- 🔌 Easily extendable to new verticals and use cases  
+- 💡 Supports simulation and monitoring in:
+  - 💵 **Finance** (KPIs, PCA)
+  - 🩺 **Health** (Vital signs simulation)
+  - ⚡ **Energy** (Smart grid & load forecasting)
+  - 🏙️ **Urban Planning** (Traffic & pollution models)
 
 ---
 
-## 🗂️ Project Structure
+## 📁 Project Structure
 
-
-
-
-project/
-├── app.py # Main dashboard app
+```
+digital-twin-ml-platform/
+├── app.py                # Main dashboard entry point
 ├── utils/
-│ └── overview.py # Introductory view
-├── modules/
-│ ├── finance.py
-│ ├── health.py
-│ ├── energy.py
-│ └── city.py
+│   └── overview.py       # Intro/landing page
+├── modules/              # Domain-specific modules
+│   ├── finance.py
+│   ├── health.py
+│   ├── energy.py
+│   └── city.py
 ├── data/
-│ └── finance.csv # Sample data
+│   └── finance.csv       # Sample dataset
 ├── assets/
-│ └── logo.png
-
-
+│   └── logo.png          # Project logo
+├── requirements.txt      # Python dependencies
+```
 
 ---
 
-## 🚀 How to Run
+## ⚙️ Installation & Run
 
-1. Install requirements:
-```bash
-pip install -r requirements.txt
+1. **Install the dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Run the dashboard:
-streamlit run app.py
+2. **Run the dashboard**:
+   ```bash
+   streamlit run app.py
+   ```
 
+---
 
-📦 Requirements
+## 📦 Dependencies
 
-    streamlit
+The main Python packages used:
 
-    pandas
+- `streamlit`
+- `pandas`
+- `numpy`
+- `scikit-learn`
+- `plotly`
 
-    numpy
+> 💡 You can generate `requirements.txt` by running:
+> ```bash
+> pip freeze > requirements.txt
+> ```
 
-    scikit-learn
+---
 
-    plotly
+## 🤝 Contributing
 
-(You can generate requirements.txt using: pip freeze > requirements.txt)
+Each team (e.g., finance, health) can develop their module inside the `modules/` directory.
 
+Pull requests are welcome! Please follow standard [GitHub contribution guidelines](https://opensource.guide/how-to-contribute/).
 
-👥 Contributing
+---
 
-Each team (e.g. finance, health) can customize their module inside modules/.
-Please submit pull requests for collaboration
+## 📝 License
+
+*(You can optionally add your project’s license here, e.g., MIT, Apache 2.0, etc.)*
