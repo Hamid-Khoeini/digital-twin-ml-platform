@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/logo.png" alt="Digital Twin Logo" width="600"/>
+<img src="assets/logo.png" alt="Digital Twin Logo" width="1000"/>
 
 # 🧠 Digital Twin ML Platform
 
